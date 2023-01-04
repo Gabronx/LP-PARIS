@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&family=Unbounded:wght@200;400;700&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Unbounded', cursive;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+} */
+body {
+    background-color: #000;
+}
+
+#header__description {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("img/PARIS2.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+h3 {
+    font-family: 'Unbounded', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgb(152, 132, 52);
+    text-align: center;
+}
+
+.text__header {
+    color: white;
+    text-align: center;
+    /* letter-spacing: 5px */
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+}
+
+span {
+    /* font-family: 'Unbounded', cursive; */
+    font-weight: 700;
+    color: rgb(148, 132, 69);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* font-size: 1.2rem; */
+}
+
+/* ////////////////////////// FORMULÁRIO //////////////////////// */
+
+.title__form {
+    text-align: center;
+    background-color: #18130e;
+    color: #988434;
+    padding-top: 50px;
+    border: none;
+    font-size: 1.86rem;
+    height: 12vh;
+}
+
+.title__form p {
+    font-weight: 700;
+}
+
+.form__title {
+    margin-top: 10px;
+}
+
+.subscription__form {
+    height: 100vh;
+    background-color: #18130e;
+    padding: rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription__form p {
+    text-align: center;
+    font-size: 1em;
+    color: #988434;
+    margin-bottom: 2rem;
+    font-family: 'Unbounded', cursive;
+    background-color: #18130e;
+    width: 100%;
+}
+
+form {
+    height: 80vh;
+    width: 50vw;
+    align-items: center;
+}
+
+.form__group {
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.form__group label {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: .3em;
+}
+
+.form__group input,
+.form__group select {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+.form__group input p {
+    margin: 0;
+    padding: 15px;
+    font-size: 100%;
+}
+
+.btn {
+    background-color: #988434;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 35px;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    opacity: 1.8;
+}
+
+.btn :hover {
+    opacity: 1em;
+}
+
+
+/* ////////////////////////// PONTOS TURISTICOS //////////////////////// */
+
+
+.content__trips {
+    color: #988434;
+    background-color: #000;
+    text-align: center;
+    padding: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    height: 90vh;
+
+}
+
+.content__trips h2 {
+    font-family: 'Unbounded', cursive;
+}
+
+.trips {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #18130e;
+}
+
+.trip {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    /* color: #988434; */
+}
+
+.trip .trip-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+
+#trip-1 {
+    background-image: url(./img/MONTE_SAINT-MICHAEL.jpg);
+}
+
+#trip-2 {
+    background-image: url(./img/CATACUMBAS.jpg);
+}
+
+#trip-3 {
+    background-image: url(./img/VERSALHES.jpg);
+}
+
+/* ////////////////////////// PACOTES //////////////////////// */
+
+.content__package {
+    height: 90vh;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.content__package h2 {
+    color: #988434;
+    text-align: center;
+    /* margin-top: 15px; */
+    font-weight: 700;
+    font-size: 2.2rem;
+    font-family: 'Unbounded', cursive;
+}
+
+.package {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.package-1,
+.package-2,
+.package-3 {
+    width: 280px;
+    height: 280px;
+    background-color: #9884341d;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid #343416;
+
+}
+
+.package-1,
+.package-2,
+.package-3,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.package-1,
+.package-2,
+.package-3,
+ul li {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    margin: 2px;
+    margin-left: 18px;
+
+}
+
+.package-1,
+.package-2,
+.package-3,
+ul {
+    list-style: none;
+    margin-top: 5%;
+}
+
+.package-1,
+.package-2,
+.package-3,
+span {
+    margin-left: 10px;
+}
+
+/******************************* FOOTER ******************************/
+
+footer {
+    height: 40vh;
+    width: auto;
+    background-color: #988434;
+}
+
+.footer__content {
+    align-items: center;
+    padding: 2em;
+    /* display: column; */
+}
+
+.title__footer h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social__media {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.list__social__media {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.list__social__media ul {
+    width: 20vw;
+}
+
+.item__social__media {
+    list-style: none;
+    font-size: 2em;
+    color: #000;
+}
+
+.text__footer {
+    text-align: center;
+}
+
+.text__footer span {
+    color: #000;
+    ;
+}
+
+@media (max-width: 700px) {
+
+    #header__description {
+        height: 38rem;
+    }
+
+    form {
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .subscription__form {
+        height: 100vh;
+        background-color: #18130e;
+        padding: 2rem;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form__group {
+        height: 15%;
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    #header__description {
+        height: 56rem;
+    }
+
+    h3 {
+        font-size: 2.7rem;
+    }
+
+    /***********************FORMULARIO**********************/
+
+    .text__header p {
+        font-size: 1.4rem;
+    }
+
+    .title__form {
+        text-align: center;
+        background-color: #18130e;
+        color: #988434;
+        padding-top: 50px;
+        border: none;
+        font-size: 1.86rem;
+        height: 12vh;
+    }
+
+    .subscription__form {
+        height: 84vh;
+        background-color: #18130e;
+        padding: 2rem;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .subscription__form p {
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        height: 70vh;
+        width: 100vw;
+        align-items: center;
+    }
+
+    form p {
+        padding-top: 20px;
+    }
+
+    .form__group {
+        height: 15%;
+        width: 100%;
+    }
+
+    .form__group input,
+    .form__group select {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 30px;
+        padding: 25px;
+    }
+
+    /*********************LUGARES*********************/
+
+
+    .trips {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .trip {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /**********************PACOTES***********************/
+
+    .content__package {
+        height: 95vh;
+        margin-top: 560px;
+        align-items: center;
+    }
+
+    .package {
+        flex-direction: column;
+        margin-top: 1em;
+        width: auto;
+        height: auto;
+        position: relative;
+        align-items: center;
+    }
+
+    .content__package h2 {
+        font-size: 3em;
+    }
+
+    .package-1,
+    .package-2,
+    .package-3 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .package-1,
+    .package-2,
+    .package-3,
+    ul li {
+        font-family: 'Montserrat', sans-serif;
+        list-style: none;
+        font-size: 0.9em;
+    }
+
+    .package-1,
+    .package-2,
+    .package-3,
+    span {
+        /* margin-top: 1em; */
+        margin-top: 1.8rem;
+    }
+
+}
